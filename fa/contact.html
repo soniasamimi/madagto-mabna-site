@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تماس با ما | ماداکتومبنا</title>
+<meta name="description" content="برای مشاوره پروژه‌های مهندسی و عمرانی در شیراز و سراسر ایران با ماداکتومبنا تماس بگیرید.">
+<link rel="alternate" hreflang="en" href="/en/contact.html">
+<link rel="icon" href="/images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="/fa/" class="logo-mark">
+      <img src="/images/logo.png" alt="لوگوی ماداکتومبنا">
+      <div class="logo-text"><span class="en">Madagto Mabna</span><span class="fa">ماداکتومبنا</span></div>
+    </a>
+    <nav class="main-nav">
+      <a href="/fa/">خانه</a>
+      <a href="/fa/about.html">درباره ما</a>
+      <a href="/fa/projects.html">پروژه‌ها</a>
+      <a href="/fa/achievements.html">دستاوردها</a>
+      <a href="/fa/blog.html">بلاگ</a>
+      <a href="/fa/contact.html" class="active">تماس با ما</a>
+      <a href="/en/contact.html" class="lang-toggle">English</a>
+    </nav>
+    <button class="nav-toggle-btn" aria-label="باز کردن منو"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="section-label">تماس با ما</span>
+    <h1>در تماس باشید</h1>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <span class="section-label">تماس مستقیم</span>
+      <h2 class="section-title" style="font-size:1.5rem;">با ما در ارتباط باشید</h2>
+      <p style="color:var(--ink-soft); margin-bottom:28px;">در ماداکتومبنا، ارتباط مؤثر نقطه شروع هر مشارکت موفق است. اگر به یک تیم مطمئن برای طراحی، محاسبات سازه‌ای، اجرا، مشارکت در ساخت یا بررسی فنی نیاز دارید، آماده کمک هستیم.</p>
+
+      <div class="contact-info-item">
+        <div class="ico">📞</div>
+        <div>
+          <h4>تلفن</h4>
+          <a href="tel:+989171129931">۰۹۱۷ ۱۱۲ ۹۹ ۳۱</a>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ico">📍</div>
+        <div>
+          <h4>آدرس دفتر</h4>
+          <p>واحد ۱۰۱، طبقه اول، بلوک A، برج دنا</p>
+          <p>بلوار شهید فرج‌الله محمدی، خیابان هاتف</p>
+          <p>شهرک گلدشت حافظ، شیراز</p>
+          <p>استان فارس، ایران &nbsp;·&nbsp; کد پستی: ۷۱۸۶۹۱۵۰۰۳</p>
+        </div>
+      </div>
+
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d755.2743394534041!2d52.438474564561844!3d29.732648831651154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1783885851380!5m2!1sen!2s"
+          allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </div>
+
+    <div>
+      <span class="section-label">ارسال پیام</span>
+      <h2 class="section-title" style="font-size:1.5rem;">درباره پروژه خود بنویسید</h2>
+
+      <form name="contact-fa" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+        <input type="hidden" name="form-name" value="contact-fa">
+        <p style="display:none;"><label>این فیلد را پر نکنید: <input name="bot-field"></label></p>
+
+        <div class="form-row">
+          <div>
+            <label for="name">نام و نام خانوادگی</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="phone">شماره تماس</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div>
+          <label for="email">آدرس ایمیل</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="subject">موضوع</label>
+          <input type="text" id="subject" name="subject">
+        </div>
+        <div>
+          <label for="project-type">نوع پروژه</label>
+          <select id="project-type" name="project-type">
+            <option>ساختمان مسکونی</option>
+            <option>تجاری / مختلط‌الاستفاده</option>
+            <option>ویلا</option>
+            <option>پروژه عمومی / عمرانی</option>
+            <option>مشاوره / بررسی فنی</option>
+            <option>مشارکت در ساخت</option>
+            <option>سایر</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">پیام شما</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer; align-self:flex-start;">ارسال پیام</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>ماداکتومبنا</h4><p>شرکت پیمانکاری و عمران. تأسیس ۱۳۸۷، شیراز، ایران.</p><p style="margin-top:10px;"><a href="tel:+989171129931">۰۹۱۷ ۱۱۲ ۹۹ ۳۱</a></p></div>
+      <div><h4>صفحات</h4><a href="/fa/about.html">درباره ما</a><a href="/fa/projects.html">پروژه‌ها</a><a href="/fa/achievements.html">دستاوردها</a><a href="/fa/blog.html">بلاگ</a></div>
+      <div><h4>آدرس</h4><p>برج دنا، بلوک A، واحد ۱۰۱</p><p>شهرک گلدشت حافظ، شیراز</p><p>استان فارس، ایران</p></div>
+    </div>
+    <div class="footer-bottom"><span>© ۲۰۲۶ ماداکتومبنا. تمام حقوق محفوظ است.</span><span>شیراز، ایران</span></div>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
