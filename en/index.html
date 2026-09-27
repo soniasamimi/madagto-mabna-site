@@ -10,6 +10,14 @@
 <link rel="icon" href="/images/favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+<style>
+.stat-item-clickable{cursor:pointer;position:relative;transition:transform .15s}
+.stat-item-clickable:hover{transform:translateY(-2px)}
+.stat-view-hint{display:block;margin-top:4px;font-size:.68rem;font-weight:700;letter-spacing:.03em;color:#fff;opacity:.85;text-decoration:underline;text-underline-offset:2px}
+.img-viewer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.97);z-index:1000;align-items:center;justify-content:center;padding:20px}
+.img-viewer.open{display:flex}.img-viewer img{max-width:94vw;max-height:90vh;object-fit:contain}
+.img-viewer-close{position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer}
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,8 +73,13 @@
 <div class="stat-item"><span class="stat-num">115,000+</span><span class="stat-label">sqm Built</span></div>
 <div class="stat-item"><span class="stat-num">30+</span><span class="stat-label">Projects</span></div>
 <div class="stat-item"><span class="stat-num">27</span><span class="stat-label">Years Experience</span></div>
-<div class="stat-item"><span class="stat-num">3rd</span><span class="stat-label">UAE Int&apos;l Award</span></div>
+<div class="stat-item stat-item-clickable" role="button" tabindex="0" aria-label="View 2ACAA 2022 award certificate" onclick="document.getElementById('certViewer').classList.add('open')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.getElementById('certViewer').classList.add('open');}"><span class="stat-num">3rd</span><span class="stat-label">UAE Int&apos;l Award</span><span class="stat-view-hint">&#128269; View Certificate</span></div>
 </div></div></section>
+<div class="img-viewer" id="certViewer"><button class="img-viewer-close" onclick="document.getElementById('certViewer').classList.remove('open')">&times;</button><img src="/images/awards/2acaa-2022-certificate.jpg" alt="2ACAA 2022 Honourable Mention Certificate &mdash; Sarv House, Sayeh Architectural Group"></div>
+<script>
+document.getElementById('certViewer').addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('certViewer').classList.remove('open');});
+</script>
 <section class="section"><div class="container">
 <span class="section-label">What We Do</span><h2 class="section-title">Three Pillars of Engineering</h2>
 <p class="section-intro">Every project reflects the same commitment: precision in design, excellence in execution, accountability from start to finish.</p>
